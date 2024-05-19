@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="hockey_web.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .margin-top{
+      margin-top: 100px;
+    }
+  </style>
+  <style>
+    .search-form {
+        display: flex;
+        align-items: center;
+    }
+    #searchInput {
+        width: 0;
+        transition: width 0.3s ease;
+        opacity: 0;
+    }
+    #searchInput.show {
+        width: 200px;
+        opacity: 1;
+    }
+</style>
+<style>
+  .rounded-corner{
+    border-radius: 10px 10px 10px 10px;
+  }
+</style>
+<style>
+  .margin{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+</style>
+<style>
+  .dashed {
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-color: rgb(151, 155, 155);
+    padding: 15px;
+    }
+</style>
+<style>
+  .margin-bottom{
+    margin-bottom: 100px;
+  }
+</style>
+</head>
+<body class="margin">
+<div class="create-navber margin">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Hockey<span class="text-danger">'</span>s</a>
+            <div class="navbar-nav m-auto">
+              <a class="nav-link active"href="#">Home</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Pages</a>
+              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#">Contact</a>  
+            </div>
+        </div>
+        <form class="search-form p-3" role="search">
+          <button type="button" class="btn btn-link" id="searchButton">
+              <i class="fa fa-search"></i>
+          </button>
+          <input class="form-control me-2" type="text" id="searchInput" placeholder="Enter your query">
+          <button class="btn btn-sm bg-danger text-light" type="submit"><span class="button">GetTicket</span></button>
+      </form>
+      <script>
+        document.getElementById('searchButton').addEventListener('click', function() {
+            const searchInput = document.getElementById('searchInput');
+            searchInput.classList.toggle('show');
+            searchInput.focus();
+        });
+    </script>
+      </nav>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active m-5 rounded-corner">
+            <img src="Rectangle 1 (1).png" class="d-block h-75 w-100 rounded-corner
+              " alt="...">
+              <div class="carousel-caption h-25 w-50  bg-dark rounded-corner text-light">
+                <h3>Meet all  heroes from the field</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, consequatur. Provident iure labore harum ipsam.</p>
+              </div>
+          </div>
+          <div class="carousel-item m-5 rounded-corner">
+            <img src="hocye2.jpg" class="d-block h-75 w-100 rounded-corner mr-auto" alt="...">
+            <div class="carousel-caption h-25 w-50  bg-dark rounded-corner text-light">
+              <h3>Meet all  heroes from the field</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, consequatur. Provident iure labore harum ipsam.</p>
+            </div>
+          </div>
+          <div class="carousel-item m-5">
+            <img src="hocye3.jpg" class="d-block h-75 w-100 rounded-corner ml-auto" alt="...">
+            <div class="carousel-caption h-25 w-50  bg-dark rounded-corner text-light">
+              <h3>Meet all  heroes from the field</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, consequatur. Provident iure labore harum ipsam.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+<section class="dashed margin text-center p-3 margin-bottom">
+  <h1>Professinal Hockeys Club</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In delectus unde doloremque odit ab,<br> rerum recusandae modi culpa possimus quaerat aliquam, sed deleniti quidem, velit corrupti rem incidunt fugit amet.</p>
+</section>
+<section>
+  <div class="row ">
+    <div class="all d-flex justify-content-around margin-bottom">
+      <div class="circle-wrap">
+        <div class="circle">
+          <div class="mask full-1">
+            <div class="fill-1"></div>
+          </div>
+          <div class="mask half">
+            <div class="fill-1"></div>
+          </div>
+          <div class="inside-circle"> 85% </div>
+        </div>
+        <div class="margin-top ">
+          <h4>Player Facility</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, provident?</p>
+        </div>
+
+      </div>
+        <div class="circle-wrap">
+          <div class="circle">
+            <div class="mask full-2">
+              <div class="fill-2"></div>
+            </div>
+            <div class="mask half">
+              <div class="fill-2"></div>
+            </div>
+            <div class="inside-circle"> 65% </div>
+          </div>
+          <div class="margin-top">
+            <h4>Player Facility</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, provident?</p>
+          </div>
+        </div>
+          <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full-3">
+                <div class="fill-3"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill-3"></div>
+              </div>
+              <div class="inside-circle"> 75% </div>
+            </div>
+            <div class="margin-top">
+              <h4>Player Facility</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, provident?</p>
+            </div>
+          </div>
+          <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full-4">
+                <div class="fill-4"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill-4"></div>
+              </div>
+              <div class="inside-circle"> 85% </div>
+            </div>
+            <div class="margin-top">
+              <h4>Player Facility</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, provident?</p>
+            </div>
+          </div>
+  </div>
+  </div>
+</section>
+<section class="dashed margin margin-top text-center p-3">
+  <h1>Professinal Hockeys Club</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In delectus unde doloremque odit ab,<br> rerum recusandae modi culpa possimus quaerat aliquam, sed deleniti quidem, velit corrupti rem incidunt fugit amet.</p>
+</section>
+
+<section class="row">
+<div class="d-flex justify-content-center margin-top">
+  <div class="backgraound1 m-3 section-card rounded-corner text-center text-light p-5">
+    <h3>Junior Program</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum et expedita minus maxime minima alias.</p>
+    <a class="bg-danger text-light" href="#">Register Now!</a>
+  </div>
+  <div class="backgraound2 m-3 section-card rounded-corner text-center text-light p-5">
+    <h3>Junior Program</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum et expedita minus maxime minima alias.</p>
+    <a class="bg-danger text-light" href="#">Register Now!</a>
+  </div>
+</div>
+</section>
+<div class="row justify-content-center margin">
+  <div class="backgraound3 m-3 section-card rounded-corner text-center text-light p-5">
+    <h3>Junior Program</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum et expedita minus maxime minima alias.</p>
+    <a class="bg-danger text-light" href="#">Register Now!</a>
+  </div>
+</div>
+<section class="dashed margin margin-top text-center p-3">
+  <h1>Professinal Hockeys Club</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In delectus unde doloremque odit ab,<br> rerum recusandae modi culpa possimus quaerat aliquam, sed deleniti quidem, velit corrupti rem incidunt fugit amet.</p>
+</section>
+<div class="d-flex container-fluid">
+  <div class="wrapper">
+  <div class="product-img">
+    <img src="http://bit.ly/2tMBBTd" height="420" width="327">
+  </div>
+  <div class="product-info">
+    <div class="product-text">
+      <h1>Harvest Vase</h1>
+      <h2>by studio and friends</h2>
+      <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+    </div>
+    <div class="product-price-btn">
+      <p><span>78</span>$</p>
+      <button type="button">buy now</button>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="product-img">
+    <img src="http://bit.ly/2tMBBTd" height="420" width="327">
+  </div>
+  <div class="product-info">
+    <div class="product-text">
+      <h1>Harvest Vase</h1>
+      <h2>by studio and friends</h2>
+      <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+    </div>
+    <div class="product-price-btn">
+      <p><span>78</span>$</p>
+      <button type="button">buy now</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- <script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+</body>
+</html>
